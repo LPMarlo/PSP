@@ -1,0 +1,14 @@
+ El volumen de la unidad C es Sistema
+ El n£mero de serie del volumen es: CAC8-09AD
+
+ Directorio de C:\Users\Alumno\IdeaProjects\PSP\src
+
+22/10/2021  09:50    <DIR>          .
+22/10/2021  09:50    <DIR>          ..
+22/10/2021  09:48             1.241 Ejercicio06.java
+22/10/2021  09:48               400 Ejercicio07.java
+22/10/2021  09:48             1.149 Ejercicio08.java
+22/10/2021  09:48               933 Ejercicio09.java
+22/10/2021  09:50             1.146 Ejercicio10.java
+               5 archivos          4.869 bytes
+               2 dirs  55.334.764.544 bytes libres

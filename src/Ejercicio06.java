@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Ejercicio6 {
+public class Ejercicio06 {
     public static void main(String[] args) {
 
         BufferedReader br = null;
