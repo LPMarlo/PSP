@@ -1,34 +1,26 @@
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Ejercicio10 {
     public static void main(String[] args) {
-        ProcessBuilder pb = new ProcessBuilder();
-        List<String> comando = new ArrayList<String>();
+        List<String> comando = new ArrayList<>();
         comando.add("CMD");
         comando.add("/C");
-        comando.add("echo");
-        comando.add("%MI_NOMBRE%");
+        comando.add("set");
+        //comando.add("echo");
+        //comando.add("%MI_NOMBRE%");
 
-        File outFile = new File("out.txt");
-        File errorFile = new File("log_err.txt");
+        ProcessBuilder pb = new ProcessBuilder(comando);
+        HashMap<String, String> vbles = (HashMap<String, String>) pb.environment();
+        vbles.put("MI_NOMBRE", "MARLO");
 
-        pb.redirectError(errorFile);
-        pb.redirectOutput(outFile);
+        pb.inheritIO();
 
         try {
-            Process p = pb.start();
-
-            if (p.waitFor()!=0) {
-                System.out.println("Error");
-            } else {
-                System.out.println("Correcto");
-            }
-        } catch (IOException | InterruptedException e) {
+            pb.start();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
