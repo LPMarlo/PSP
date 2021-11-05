@@ -2,22 +2,24 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
-public class Ejercicio10 {
+public class Ejercicio11 {
     public static void main(String[] args) {
+
+        String p = Ejercicio10.class.getCanonicalName();
+        String classpath = Objects.requireNonNull(Ejercicio10.class.getClassLoader().getResource("")).getPath();
+
         List<String> comando = new ArrayList<>();
-        comando.add("CMD");
-        comando.add("/C");
-        comando.add("set");
-        //comando.add("echo");
-        //comando.add("%MI_NOMBRE%");
+        comando.add("java");
+        comando.add(p);
 
         ProcessBuilder pb = new ProcessBuilder(comando);
+
         HashMap<String, String> vbles = (HashMap<String, String>) pb.environment();
-        vbles.put("MI_NOMBRE", "MARLO");
+        vbles.put("CLASSPATH", classpath);
 
         pb.inheritIO();
-
         try {
             pb.start();
         } catch (IOException e) {

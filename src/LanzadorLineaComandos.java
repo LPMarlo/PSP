@@ -2,26 +2,28 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
-public class Ejercicio10 {
+public class LanzadorLineaComandos {
     public static void main(String[] args) {
+        String name = LineaComandos.class.getCanonicalName();
+        String classpath = Objects.requireNonNull(LineaComandos.class.getClassLoader().getResource("")).getPath();
+
         List<String> comando = new ArrayList<>();
-        comando.add("CMD");
-        comando.add("/C");
-        comando.add("set");
-        //comando.add("echo");
-        //comando.add("%MI_NOMBRE%");
+        comando.add("java");
+        comando.add("-classpath");
+        comando.add(classpath);
+        comando.add(name);
+        comando.add("a");
 
         ProcessBuilder pb = new ProcessBuilder(comando);
-        HashMap<String, String> vbles = (HashMap<String, String>) pb.environment();
-        vbles.put("MI_NOMBRE", "MARLO");
 
         pb.inheritIO();
-
         try {
             pb.start();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
     }
 }
