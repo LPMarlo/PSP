@@ -26,8 +26,4 @@ public class Ejercicio11 {
             e.printStackTrace();
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/master
