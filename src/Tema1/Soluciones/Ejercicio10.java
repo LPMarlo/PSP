@@ -1,4 +1,4 @@
-package SolucionesEjerciciosTema1;
+package Tema1.Soluciones;
 
 import java.io.IOException;
 import java.util.ArrayList;

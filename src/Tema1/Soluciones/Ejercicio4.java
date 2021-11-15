@@ -1,5 +1,5 @@
 
-package SolucionesEjerciciosTema1;
+package Tema1.Soluciones;
 
 public class Ejercicio4 {
 

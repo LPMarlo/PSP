@@ -1,5 +1,5 @@
 
-package SolucionesEjerciciosTema1;
+package Tema1.Soluciones;
 
 import java.io.BufferedReader;
 import java.io.IOException;

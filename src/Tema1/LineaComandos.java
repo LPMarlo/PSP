@@ -1,3 +1,4 @@
+package Tema1;
 
 public class LineaComandos {
     public static void main(String[] args) {

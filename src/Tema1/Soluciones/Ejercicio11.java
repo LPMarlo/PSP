@@ -1,18 +1,18 @@
-package SolucionesEjerciciosTema1;
+package Tema1.Soluciones;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Realiza una clase Java cuyo método main lance un proceso ejecutando la clase del Ejercicio10.
+ * Realiza una clase Java cuyo método main lance un proceso ejecutando la clase del Tema1.Ejercicio10.
  */
 public class Ejercicio11 {
 
 	public static void main(String[] args) {
 		List<String> lCommand = new ArrayList<>();
 		lCommand.add("java");
-		lCommand.add("PSP.UD01.progmultiproceso.Ejercicio10");
+		lCommand.add("PSP.UD01.progmultiproceso.Tema1.Ejercicio10");
 		
 		ProcessBuilder pb = new ProcessBuilder(lCommand);
 		
