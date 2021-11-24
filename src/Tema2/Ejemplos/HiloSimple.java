@@ -1,14 +1,11 @@
 package Tema2.Ejemplos;
 
-public class HiloSimple extends Thread {
+public class HiloSimple implements Runnable {
 
     @Override
     public void run() {
-        try {
-            Thread.sleep(2500);
-            System.out.println("Ejecuto");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        for (int i = 0; i < 5; i++)
+            System.out.println("En el Hilo... ");
+
     }
 }
