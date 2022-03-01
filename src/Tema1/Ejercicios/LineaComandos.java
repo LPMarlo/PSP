@@ -1,4 +1,4 @@
-package Tema1;
+package Tema1.Ejercicios;
 
 public class LineaComandos {
     public static void main(String[] args) {

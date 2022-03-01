@@ -1,9 +1,9 @@
 /**
  * 
  */
-package Tema3.prueba.cliente;
+package Tema3.Prueba.cliente;
 
-import Tema3.prueba.modelo.Usuario;
+import Tema3.Prueba.modelo.Usuario;
 
 import java.io.BufferedReader;
 import java.io.IOException;

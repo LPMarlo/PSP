@@ -1,9 +1,9 @@
 
 
-package Tema3.prueba.aplicacion;
+package Tema3.Prueba.aplicacion;
 
-import Tema3.prueba.cliente.ManagerAplicacionUsuarios;
-import Tema3.prueba.modelo.Usuario;
+import Tema3.Prueba.cliente.ManagerAplicacionUsuarios;
+import Tema3.Prueba.modelo.Usuario;
 
 import java.util.Scanner;
 

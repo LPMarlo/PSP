@@ -1,4 +1,4 @@
-package Tema3.prueba.modelo;
+package Tema3.Prueba.modelo;
 
 /**
  * @author JESUS
