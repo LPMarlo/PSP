@@ -7,6 +7,9 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
+/**
+ * @author Marlo Lebrón Pareja
+ */
 public class Client {
 
     private static final Scanner sc = new Scanner(System.in);
